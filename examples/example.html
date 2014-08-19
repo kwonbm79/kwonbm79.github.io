@@ -39,8 +39,8 @@
         ctracker.init(pModel);
         ctracker.start(imageInput);
 				
-				function positionLoop() {
-          requestAnimationFrame(positionLoop);
+//		  function positionLoop() {
+//          requestAnimationFrame(positionLoop);
           var positions = ctracker.getCurrentPosition();
           // do something with the positions ...
           // print the positions
@@ -52,7 +52,7 @@
             document.getElementById('positions').innerHTML = positionString;
           }
         }
-        positionLoop();
+//        positionLoop();
 				
 				var canvasInput = document.getElementById('canvas');
 				var cc = canvasInput.getContext('2d');
