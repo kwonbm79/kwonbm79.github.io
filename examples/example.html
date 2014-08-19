@@ -28,7 +28,7 @@
         <img id="picture" width="368" height="288" src="./media/song.jpg">
         </img>
 
-        <canvas id="canvas" width="368" height="288"></canvas>
+//        <canvas id="canvas" width="368" height="288"></canvas>
       </div>
       <p>Printing coordinates of the first 10 points in facial features:</p>
       <p id="positions"></p>
@@ -47,7 +47,7 @@
           var positionString = "";
           if (positions) {
             for (var p = 0;p < 70;p++) {
-              positionString += "["+positions[p][0].toFixed(2)+","+positions[p][1].toFixed(2)+"]<br/>";
+              positionString += "["+positions[p][0].toFixed(5)+","+positions[p][1].toFixed(5)+"],";
             }
             document.getElementById('positions').innerHTML = positionString;
           }
