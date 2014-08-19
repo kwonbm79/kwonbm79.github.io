@@ -23,7 +23,7 @@
 			<h2>Example</h2>
       <div id="container">
         <video id="video" width="368" height="288" autoplay loop>
-          <source src="./media/obama.mp4" type="video/mp4"/>
+          <source src="./media/jolie.mp4" type="video/mp4"/>
         </video>	
 <!--        <img id="video" width="368" height="288" src="./media/song.jpg">
         </img>	--!>
@@ -47,7 +47,7 @@
           var positionString = "";
           if (positions) {
             for (var p = 0;p < 70;p++) {
-              positionString += "featurepoint "+p+" : ["+positions[p][0].toFixed(2)+","+positions[p][1].toFixed(2)+"]<br/>";
+              positionString += "["+positions[p][0].toFixed(2)+","+positions[p][1].toFixed(2)+"]<br/>";
             }
             document.getElementById('positions').innerHTML = positionString;
           }
