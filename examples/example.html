@@ -25,7 +25,7 @@
 <!--        <video id="video" width="368" height="288" autoplay loop>
           <source src="./media/franck.ogv" type="video/ogg"/>
         </video>	--!>
-        <img id="video" width="368" height="288" src="./media/song.jpg" type="image/webp">
+        <img id="video" width="368" height="288" src="./media/song.jpg">
           <!-- <source src="./media/song.jpg" type="image/webp" /> --!>
         </img>
 
@@ -57,12 +57,12 @@
 				
 				var canvasInput = document.getElementById('canvas');
 				var cc = canvasInput.getContext('2d');
-				function drawLoop() {
+<!--				function drawLoop() {
           requestAnimationFrame(drawLoop);
           cc.clearRect(0, 0, canvasInput.width, canvasInput.height);
           ctracker.draw(canvasInput);
         }
-        drawLoop();
+        drawLoop(); --!>
 			</script>
 		</div>
 	</body>
